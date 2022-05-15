@@ -1,0 +1,323 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Lets Go 
+Login Form for GDSC
+
+Fields  such as Username, Password, Email, Login or Signup
+For doing this make box first 
+Background color should be white and form should be white
+Sign up/ login button should blue
+Box shadow should there
+Media should be there.
+Border bottom
+Reset css
+Button
+*/
+
+
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Dongle', sans-serif;
+    background: linear-gradient(#e66465, #9198e5);
+    margin: 0%;
+    padding: 0%;
+}
+.login-box{
+    position: absolute;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+}
+.login-box h2{
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    display: block;
+
+    /* color: rgb(81, 81, 212); */
+    color: #03e9f4;
+}
+
+.login-box .P{
+    position: relative;
+    font-weight: bold;
+    color: rgb(81, 81, 212);
+}
+.login-box .P input{
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom:1px solid black ;
+    font-size: 16px;
+    margin: 4% 0;
+}
+.login-box .P label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 26px;
+    transition: .5s;
+    pointer-events: none;
+    margin: 4% 0;
+}
+.login-box .P input:focus~label{
+    top: -30px;
+    left: 0;
+    font: 12px;
+}
+.login-box .R{
+    position: relative;
+    font-weight: bold;
+    color: rgb(81, 81, 212);
+    /* color: #03e9f4; */
+}
+.login-box .R input{
+    width: 100%;
+    padding: 10px 0;
+    color: #000000;
+    background: transparent;
+    border: none;
+    border-bottom:1px solid black ;
+    font-size: 16px;
+    /* margin:30px 0; */
+    margin: 4% 0;
+}
+.login-box .R label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 26px;
+    transition: .5s;
+    pointer-events: none;
+    /* margin:30px 0; */
+    margin: 4% 0;
+}
+.login-box .R input:focus~label{
+    top: -30px;
+    left: 0;
+    font: 12px;
+}
+.login-box .A{
+    position: relative;
+    font-weight: bold;
+    color: rgb(81, 81, 212);
+}
+.login-box .A input{
+    width: 100%;
+    padding: 10px 0;
+    color: #000000;
+    background: transparent;
+    border: none;
+    border-bottom:1px solid black ;
+    font-size: 16px;
+    margin:4% 0;
+}
+.login-box .A label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 26px;
+    transition: .5s;
+    pointer-events: none;
+    margin:4% 0;
+}
+.login-box .A input:focus~label,
+.login-box .A input:valid~label{ 
+    top: -30px;
+    left: 0;
+    font: 12px;
+   
+}
+ 
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px    
+  }
+.login-box  form a{
+    text-align: center;
+}  
+ .login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }  

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developement Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <script
+      src="https://kit.fontawesome.com/8ca649e504.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <img
+          src="data:image/png;base64,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"
+          alt="gdcc logo"
+        />
+
+        <div class="header-search">
+          <i class="fas fa-search"></i>
+          <input type="text"  placeholder="Search"/>
+        </div>
+      </div>
+      <div class="header-right">
+          <div class="header-options">
+              <i class="fas fa-home"></i>
+              <h3>Home</h3>
+          </div>
+          <div class="header-options">
+              <i class="fas fa-suitcase"></i>
+              <h3>Job</h3>
+          </div>
+          <div class="header-options">
+              <i class="fas fa-bell"></i>
+              <h3>Notifications</h3>
+          </div>
+          <div class="header-options">
+              <i class="fas fa-user-friends"></i>
+              <h3>Networks</h3>
+          </div>
+          <div class="header-options">
+              <i class="fas fa-envelope">e</i>
+              <h3>Message</h3>
+          </div>
+      </div>
+    </div>
+    <div class="P">
+    <div id="left-aside-wrapper">
+        <aside id="left-aside">
+            <div id="profile-card">
+                <div id="background"></div>
+                <div id="profile-info">
+                    <img
+                        src="data:image/jpeg;base64,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"
+                        alt="Profile picture"
+                    />
+                    <strong id="profile-name"
+                        >Pranjal Varshney</strong
+                    >
+                    <small>Front-End Developer</small>
+                </div>
+                <div id="profile-links">
+                    <a href="#">
+                        <span>
+                            Who's viewed your profile
+                        </span>
+                        <span class="profile-number">
+                            102
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span>
+                            Connections
+                        </span>
+                        <span class="profile-number">
+                            452
+                        </span>
+                    </a>
+                </div>
+                <span>Grow your network</span>
+                <a href="#">
+                    <span>Access exclusive tools & insights</span>
+                    <span id="profile-premium">
+                        <span id="profile-square">■</span> Try Premium
+                        Free for 1 Month</span
+                    >
+                </a>
+            </div>
+            <div id="profile-groups">
+                <section>
+                    <header
+                        onmouseover="showProfileGroupIcon(this)"
+                        onmouseout="showProfileGroupIcon(this)"
+                    >
+                        <span>Recent</span>
+                        <span
+                            class="fas fa-angle-up"
+                            onclick="toggleProfileGroupList(this)"
+                        ></span>
+                    </header>
+                    <ul class="group-list">
+                        <li>
+                            <span class="fas fa-users"></span>
+                            <span>React Developers</span>
+                        </li>
+                        <li>
+                            <span class="fas fa-hashtag"></span>
+                            <span>javascript</span>
+                        </li>
+                        <li>
+                            <span class="fas fa-hashtag"></span>
+                            <span>webdevelopment</span>
+                        </li>
+                        <li>
+                            <span class="fas fa-users"></span>
+                            <span>Javascript Brasil</span>
+                        </li>
+                        <li>
+                            <span class="fas fa-users"></span>
+                            <span>Dog Lovers</span>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <header
+                        onmouseover="showProfileGroupIcon(this)"
+                        onmouseout="showProfileGroupIcon(this)"
+                    >
+                        <span class="group-title">Groups</span>
+                        <span
+                            class="fas fa-angle-up"
+                            onclick="toggleProfileGroupList(this)"
+                        ></span>
+                    </header>
+                    <ul>
+                        <li>
+                            <span class="fas fa-users"></span>
+                            <span id="aaaa">React Developers</span>
+                        </li>
+                        <li>
+                            <span class="fas fa-users"></span>
+                            <span>Javascript India</span>
+                        </li>
+                        <li>
+                            <span class="fas fa-users"></span>
+                            <span>Dog Lovers</span>
+                        </li>
+                    </ul>
+                    <div class="group-list">
+                        <a href="#">See all</a>
+                    </div>
+                </section>
+                <section>
+                    <header
+                        onmouseover="showProfileGroupIcon(this)"
+                        onmouseout="showProfileGroupIcon(this)"
+                    >
+                        <span class="group-title">
+                            Followed Hashtags</span
+                        >
+                        <span
+                            class="fas fa-angle-up"
+                            onclick="toggleProfileGroupList(this)"
+                        ></span>
+                    </header>
+                    <ul>
+                        <li>
+                            <span class="fas fa-hashtag"></span>
+                            <span>javascript</span>
+                        </li>
+                        <li>
+                            <span class="fas fa-hashtag"></span>
+                            <span>webdevelopment</span>
+                        </li>
+                    </ul>
+                    <a href="#">See all</a>
+                </section>
+                <a href="#">Discover more</a>
+            </div>
+        </aside>
+    </div>
+
+    <div class="main1">
+        <div class="main-inputs">
+          <img src="https://media-exp1.licdn.com/dms/image/C511BAQG9t31LlCX7jw/company-background_10000/0/1584183898149?e=2147483647&v=beta&t=NybZjm1upz5XF7fq4G50U_ZFMpa-H-TuJNhgE8im8LQ" width="800px" height="275px" class="mingw"
+           id="gdsc logo" alt="gdsc logo">
+          <img src="data:image/png;base64,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" width="200px" height="120px" class="kyu" 
+           id="logo" alt="logo">
+           <h1 class="Bee">Developer Student Clubs JSSATEN</h1>
+           <p class="qt">DSC JSS is a non-profit developers group powered by Google Developers. Our aim is "Learn, Share and Connect"​</p>
+           <p class="qt">IT Services and IT Consulting Noida:Uttar Pradesh</p>
+           <br>
+          <div class="lol"><button class="btn1">
+                   Following <sup>&#10003</sup>
+           </button>
+           <button class="btn2"><a href="https://www.dscjss.in/">Visit Website</a>
+               <sup>&reg;</sup>
+        </button>
+           <button class="btn3">
+                More
+           </button>
+        </div> 
+           <br>
+           <br>
+           <br>
+
+           <a href="#"class="a">Home</a>
+           <a href="#"class="a">About</a>
+           <a href="#"class="a">Posts</a>
+           <a href="#"class="a">Jobs</a>
+           <a href="#"class="a">People</a>
+           <a href="#"class="a">Events</a>
+           <a href="#"class="a">Videos</a>
+        </div>
+   </div>
+   
+   
+   
+     <aside id="right-aside">
+        <div id="rec-section">
+            <div>
+                <header>
+                    <span>Pages people also viewed</span>
+                    <span
+                        class="fas fa-info-circle"
+                        onmouseover="showRecommendationsInfo(this)"
+                        onmouseout="showRecommendationsInfo(this)">
+                    
+                        <div id="float-info">
+                            <span>
+                                Follow things that interest you to
+                                personalize your feed.
+                            </span>
+                            <a href="#">Learn more.</a>
+                        </div>
+                        <span>►</span>
+                        <div id="square"></div>
+                    </span>
+                </header>
+            
+                <div>
+                    <div>
+                        <img src="https://avatars.githubusercontent.com/u/11776797?s=200&v=4" alt="" />
+                        <div>
+                            <strong>Nibble Computer Society</strong>
+                            <small>information and technological services</small>
+                        </div>
+                        <button>
+                            <span class="fas fa-plus"></span>
+                            <span>Follow</span>
+                        </button>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoldpnA6j5LCx1qrfvttn3LWfkTWVPWaqqQ65VeFecg&s" alt="" />
+                        <div>
+                            <strong>EDC JSSATE</strong>
+                            <small>Edcation Management</small>
+                        </div>
+                        <button>
+                            <span class="fas fa-plus"></span>
+                            <span>Follow</span>
+                        </button>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHUtc_079dHrmBWJwF8bzuX12OKkzMxlDKyo3J7MmqHQ&s" alt="" />
+                        <div>
+                            <strong>MicroSoft Mobile Innovation Lab</strong>
+                            <small
+                                >information Technology & Services</small
+                            >
+                        </div>
+                        <button>
+                            <span class="fas fa-plus"></span>
+                            <span>Follow</span>
+                        </button>
+                    </div>
+                </div>
+                <a href="#">See similar pages</a>
+            </div>
+        </div>
+        
+            
+        </div>
+    </aside>
+</div>
+  </body>
+</html> 
